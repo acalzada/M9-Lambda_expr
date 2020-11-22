@@ -14,18 +14,18 @@ public class mainAPP {
 	public static void main(String[] args) {
 		
 		// -----     FASE 1     -----
-		System.out.println("-----     FASE 1     -----\n\n");
+		printFase(1);
 		
 		// Ex-1
-		System.out.println("- Exercici 1 -\n");
+		printExercise(1);
 		List<String> namesList = Arrays.asList("Ohm", "Ot", "Oscar", "Otilia", "Pepe", "Apu", "apu", "Carlos", "Sonia", "Angel", "Anna", "Ana", "ana", "Sofia", "Anacleto", "Maria", "Alberto", "Alp", "alp");
 		System.out.println("\tNoms -> " + namesList.toString() + "\n");
-		System.out.print("\tResult: " + get3LetterNamesBeginingWithA(namesList));
+		System.out.println("\tResult: " + get3LetterNamesBeginingWithA(namesList));
 		
 		
 		// Ex-2
+		printExercise(2);
 		List<Integer> numbersList = Arrays.asList(1, 2 , 3, 10, 55, 123);
-		System.out.println("\n\n- Exercici 2 -\n");
 		System.out.println("\tNumeros -> " + numbersList.toString() + "\n");
 		
 		System.out.println("\tResult: " + identifyParityOfNumbers(numbersList));
@@ -33,7 +33,7 @@ public class mainAPP {
 		
 		// Ex-3
 		// We'll use the same List as in Ex-1 -> namesList.
-		System.out.println("\n\n- Exercici 3 -\n");
+		printExercise(3);
 		System.out.println("\tNoms -> " + namesList.toString() + "\n");
 		
 		System.out.println("\tResult: " + getStringsWithLetterO(namesList));
@@ -41,15 +41,15 @@ public class mainAPP {
 		
 		// Ex-4
 		// We'll use the same List as in Ex-1 -> namesList.
-		System.out.println("\n\n- Exercici 4 -\n");
+		printExercise(4);
 		System.out.println("\tNoms -> " + namesList.toString() + "\n");
 		
 		System.out.println("\tResult: " + getStringsWithLetterOLonger5Letters(namesList));
 		
 		
 		// Ex-5
+		printExercise(5);
 		List<String> monthsList = Arrays.asList("Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre");
-		System.out.println("\n\n- Exercici 5 -\n");
 		System.out.println("\tMesos -> " + monthsList.toString() + "\n");
 		
 		Consumer<String> print = string -> System.out.print(string + ", ");
@@ -58,7 +58,7 @@ public class mainAPP {
 		
 
 		// Ex-6
-		System.out.println("\n\n- Exercici 6 -\n");
+		printExercise(6);
 		System.out.println("\tMesos -> " + monthsList.toString() + "\n");
 		
 		System.out.print("\tResult: ");
@@ -66,24 +66,40 @@ public class mainAPP {
 
 
 		// -----     FASE 2     -----
-		System.out.println("-----     FASE 2     -----\n\n");
+		printFase(2);
 		
 		//Ex-7
-		System.out.println("\n\n- Exercici 7 -\n");
+		printExercise(7);
 		
 		piInterface myPiInterface = () -> 3.1415; 
 		System.out.println("\tResult:  " + myPiInterface.getPiValue());
 		
 		
 		// -----     FASE 3     -----
-		System.out.println("-----     FASE 3     -----\n\n");
+		printFase(3);
 		
 		//Ex-8
-		System.out.println("\n\n- Exercici 8 -\n");
+		printExercise(8);
 		
-
+		String originalString = "ABCD";
+		System.out.println("\tstring -> " + originalString);
 		
+		reverseInterface myReverseInterface = (String inputString) -> new StringBuilder(inputString).reverse().toString(); 
+		System.out.println("\tResult: " + myReverseInterface.reverse(originalString));
 		
 	}
 	
+	private static void printFase(int fase){
+		System.out.println("\n\n========================");
+		System.out.println("==       FASE " + fase + "       ==");
+		System.out.println("========================\n");
+
+	}
+	
+	private static void printExercise(int exercise){
+		
+		System.out.println("\n- Exercici " + exercise + " -\n");
+		
+
+	}
 }
