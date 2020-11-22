@@ -3,11 +3,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.mainAPP.fase2.PiInterface;
+
 
 // M9 exercise classes and methods
 import static com.mainAPP.fase1.*;
-import static com.mainAPP.piInterface.*;
+
 
 public class mainAPP {
 
@@ -74,6 +74,12 @@ public class mainAPP {
 		piInterface myPiInterface = () -> 3.1415; 
 		System.out.println("\tResult:  " + myPiInterface.getPiValue());
 		
+		
+		// -----     FASE 3     -----
+		System.out.println("-----     FASE 3     -----\n\n");
+		
+		//Ex-8
+		System.out.println("\n\n- Exercici 8 -\n");
 		
 
 		
