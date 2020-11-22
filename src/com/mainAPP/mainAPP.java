@@ -75,14 +75,7 @@ public class mainAPP {
 		System.out.println("\tResult:  " + myPiInterface.getPiValue());
 		
 		
-		// -----     FASE 3     -----
-				System.out.println("-----     FASE 3     -----\n\n");
-				
-				//Ex-7
-				System.out.println("\n\n- Exercici 8 -\n");
-				
-				piInterface myPiInterface = () -> 3.1415; 
-				System.out.println("\tResult:  " + myPiInterface.getPiValue());
+
 		
 		
 	}
